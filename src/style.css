@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SeoulNamsanM'
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcomeContainerClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+}
+#welcomeMessage {
+    font-size: 4rem;
+    font-family: 'Baloo 2';
+}
+#startBtn {
+    margin-top: 5rem;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 10%;
+    height: 75px;
+    width: 100px;
+    transition: all 0.1s;
+    border-bottom: 5px solid rgb(113, 112, 112);
+}
+#startBtn:hover {
+    background-color: lightgrey;
+    cursor:url(/img/baseball.cur), auto;
+}
+#startBtn:active {
+    transform : translateY(3px);
+    border-bottom: 3px solid rgb(113, 112, 112);
+}
+#gamePlayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    height: 100%;
+}
+#answerInputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#numberCreated {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px
+}
+#answerInput input {
+    height:30px;
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#pastTryContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 520px;
+}
+.triesContainer {
+    margin-top: 30px;
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 8px;
+}
+.triesContainer:hover {
+    background-color: rgb(144, 183, 144);
+}
+.pastTry {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#newTryBtnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#message {
+    font-size: 2rem;
+}
+#newTryBtnContainer button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 16px;
+}
+#newTryBtnContainer button:hover {
+    background-color: lightgrey;
+    cursor:url(/img/baseball.cur), auto;
+}
+.hidden {
+    display: none;
+}
